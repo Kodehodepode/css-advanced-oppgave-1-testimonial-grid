@@ -58,10 +58,14 @@ main {
     grid-template-rows: 1fr 1fr;
     gap: 30px;
 
-    /* filter: drop shadow brukes istedet for box-shaddow for å unngå at skyggen overlapper andre kort */
+    /*
+        filter: drop shadow brukes istedet for box-shaddow for å unngå at skyggen overlapper andre kort
+        når jeg ser etter på nytt i oppgaveteksten bes det spesifikt om box-shaddow,
+        tror jeg må bruke pseudoelementer og z-index for å få det til eventuelt, litt usikker på hvordan det skal gjøres.
+    */
     filter: drop-shadow(
         30px 40px 30px rgba(0, 0, 0, 0.3)
-    ); /* Fant ikke riktig farge i style-guide, bruker rgba, mulig jeg har tatt feil farge et annet sted */
+    ); /* Fant ikke riktig farge i style-guide, bruker rgba, mulig jeg har tatt feil farge et annet sted men finner ikke det */
 }
 
 @media (max-width: 800px) {
