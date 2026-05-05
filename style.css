@@ -23,9 +23,15 @@
 html,
 body {
     margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100svh;
 }
 
 body {
+    min-height: 100%;
     /* Utgangspunkt for videre typografi */
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: var(--font-500);
