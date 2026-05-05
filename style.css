@@ -27,6 +27,23 @@ body {
 
     /* Bakgrunn */
     background: var(--grey-100);
+
+    /* Sentrer hovedinnhold */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Padding på desktop-skjermer, kanskje unødvendig etter kortene får størrelse */
+    padding: 50px;
+}
+
+main {
+    max-width: 1340px;
+
+    /* 4 x 2 grid, så kan noen elementer "spanne" to kolonner og rader? Mulig det blir vanskelig mtp gap, test */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
 }
 
 .verified {
@@ -41,6 +58,8 @@ body {
 .testimony:first-of-type {
     background: var(--purple-500);
     color: var(--grey-100);
+    grid-column-end: span 2;
+
     img {
         border-color: var(--purple-300);
     }
@@ -58,6 +77,8 @@ body {
 .testimony:nth-of-type(4) {
     background: var(--dark-blue);
     color: var(--grey-200);
+    grid-column-end: span 2;
+
     img {
         border-color: var(--purple-500);
     }
@@ -65,6 +86,7 @@ body {
 
 .testimony:nth-of-type(5) {
     background: var(--white);
+    grid-row-end: span 2;
 }
 
 .profile-card img {
