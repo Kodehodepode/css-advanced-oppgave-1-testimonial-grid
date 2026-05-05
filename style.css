@@ -44,6 +44,33 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 800px) {
+    /* Opprinnelig ber Frontend Mentor om at designet skal fungere på 375px bredde med mobiler, jeg føler layouten blir feil allerede ved 800px og regner med det er greit å velge det som breakpoint. */
+    main {
+        grid-template-columns: 1fr;
+
+        /* reduser gap på mindre skjermer */
+        gap: 15px;
+
+        .testimony.daniel,
+        .testimony.patrick {
+            /* fjern span verdier ellers skapes nye kolonner tross grid-template-columns: 1fr */
+            grid-column-end: initial;
+            /* de dobbelt så brede kortene skal nå bli dobbelt så høye */
+            grid-row-end: span 2;
+        }
+        .testimony.kira {
+            grid-row-end: initial;
+        }
+    }
+
+    /* reduser padding på mindre skjermer */
+    body {
+        padding: 15px;
+    }
 }
 
 .verified {
