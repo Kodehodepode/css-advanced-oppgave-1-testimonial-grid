@@ -19,6 +19,12 @@
     --font-600: 600;
 }
 
+/* Begrenset CSS reset for å balansere gap/padding */
+html,
+body {
+    margin: 0;
+}
+
 body {
     /* Utgangspunkt for videre typografi */
     font-family: "Barlow Semi Condensed", sans-serif;
@@ -53,7 +59,7 @@ main {
         grid-template-columns: 1fr;
 
         /* reduser gap på mindre skjermer */
-        gap: 15px;
+        gap: 30px;
 
         .testimony.daniel,
         .testimony.patrick {
@@ -69,7 +75,10 @@ main {
 
     /* reduser padding på mindre skjermer */
     body {
-        padding: 15px;
+        padding: 30px;
+    }
+    article.testimony {
+        padding: 30px;
     }
 }
 
