@@ -42,6 +42,9 @@ body {
 .testimony:first-of-type {
     background: var(--purple-500);
     color: white;
+    img {
+        border-color: var(--purple-300);
+    }
 }
 
 .testimony:nth-of-type(2) {
@@ -54,8 +57,21 @@ body {
 }
 
 .testimony:nth-of-type(4) {
-    background: var(--black);
+    background: var(--dark-blue);
     color: var(--grey-200);
+    img {
+        border-color: var(--purple-500);
+    }
+}
+
+.testimony:nth-of-type(5) {
+    background: var(--white);
+}
+
+.profile-card img {
+    /* Små profilbilder */
+    border-radius: 100%;
+    border: 3px solid var(--grey-200);
 }
 
 /* Fra opprinnelig Frontend Mentor fil: */
