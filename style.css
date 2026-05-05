@@ -57,6 +57,11 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 30px;
+
+    /* filter: drop shadow brukes istedet for box-shaddow for å unngå at skyggen overlapper andre kort */
+    filter: drop-shadow(
+        30px 40px 30px rgba(0, 0, 0, 0.3)
+    ); /* Fant ikke riktig farge i style-guide, bruker rgba, mulig jeg har tatt feil farge et annet sted */
 }
 
 @media (max-width: 800px) {
