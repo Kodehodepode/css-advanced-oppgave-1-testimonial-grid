@@ -19,12 +19,6 @@
     --font-600: 600;
 }
 
-article {
-    /* Midlertidig jelpestyling */
-    margin-bottom: 40px;
-    display: block;
-}
-
 body {
     /* Utgangspunkt for videre typografi */
     font-family: "Barlow Semi Condensed", sans-serif;
