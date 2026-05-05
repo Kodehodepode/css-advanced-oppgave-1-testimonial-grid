@@ -18,7 +18,9 @@
     --font-500: 500;
     --font-600: 600;
 }
+
 article {
+    /* Midlertidig jelpestyling */
     margin-bottom: 40px;
     display: block;
 }
