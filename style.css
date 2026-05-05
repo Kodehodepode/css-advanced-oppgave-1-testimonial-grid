@@ -92,7 +92,7 @@ main {
     body {
         padding: 30px;
     }
-    article.testimony {
+    div.testimony {
         padding: 30px;
     }
 }
