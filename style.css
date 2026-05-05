@@ -39,6 +39,11 @@ body {
     font-size: 12px; /* Litt mindre enn navnet */
 }
 
+.testimony {
+    padding: 30px;
+    border-radius: 10px;
+}
+
 .testimony:first-of-type {
     background: var(--purple-500);
     color: white;
