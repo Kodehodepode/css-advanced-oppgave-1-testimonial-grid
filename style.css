@@ -30,10 +30,32 @@ body {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: var(--font-500);
     font-size: var(--body-font-size);
+
+    /* Bakgrunn */
+    background: var(--grey-100);
 }
 
 .verified {
     font-size: 12px; /* Litt mindre enn navnet */
+}
+
+.testimony:first-of-type {
+    background: var(--purple-500);
+    color: white;
+}
+
+.testimony:nth-of-type(2) {
+    background: var(--grey-500);
+    color: var(--grey-100);
+}
+
+.testimony:nth-of-type(3) {
+    background: var(--white);
+}
+
+.testimony:nth-of-type(4) {
+    background: var(--black);
+    color: var(--grey-200);
 }
 
 /* Fra opprinnelig Frontend Mentor fil: */
