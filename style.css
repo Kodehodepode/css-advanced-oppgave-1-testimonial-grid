@@ -25,6 +25,17 @@ article {
     display: block;
 }
 
+body {
+    /* Utgangspunkt for videre typografi */
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: var(--font-500);
+    font-size: var(--body-font-size);
+}
+
+.verified {
+    font-size: 12px; /* Litt mindre enn navnet */
+}
+
 /* Fra opprinnelig Frontend Mentor fil: */
 
 .attribution {
