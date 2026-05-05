@@ -55,7 +55,7 @@ main {
     border-radius: 10px;
 }
 
-.testimony:first-of-type {
+.testimony.daniel {
     background: var(--purple-500);
     color: var(--grey-100);
     grid-column-end: span 2;
@@ -65,16 +65,16 @@ main {
     }
 }
 
-.testimony:nth-of-type(2) {
+.testimony.jonathan {
     background: var(--grey-500);
     color: var(--grey-100);
 }
 
-.testimony:nth-of-type(3) {
+.testimony.jeanette {
     background: var(--white);
 }
 
-.testimony:nth-of-type(4) {
+.testimony.patrick {
     background: var(--dark-blue);
     color: var(--grey-200);
     grid-column-end: span 2;
@@ -84,7 +84,7 @@ main {
     }
 }
 
-.testimony:nth-of-type(5) {
+.testimony.kira {
     background: var(--white);
     grid-row-end: span 2;
 }
