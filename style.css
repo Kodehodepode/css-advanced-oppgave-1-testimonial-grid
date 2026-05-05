@@ -46,7 +46,7 @@ body {
 
 .testimony:first-of-type {
     background: var(--purple-500);
-    color: white;
+    color: var(--grey-100);
     img {
         border-color: var(--purple-300);
     }
@@ -77,6 +77,31 @@ body {
     /* Små profilbilder */
     border-radius: 100%;
     border: 3px solid var(--grey-200);
+}
+
+/* Grid layout på øvre del av kortene */
+.profile-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        "img name"
+        "img verified";
+
+    img {
+        width: 32px;
+        grid-area: img;
+        margin-right: 10px;
+    }
+
+    .name {
+        grid-area: name;
+        align-self: end;
+        margin-bottom: 4px;
+    }
+    .verified {
+        grid-area: verified;
+        align-self: start;
+    }
 }
 
 /* Fra opprinnelig Frontend Mentor fil: */
